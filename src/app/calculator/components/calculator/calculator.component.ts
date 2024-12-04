@@ -6,9 +6,9 @@ import {
   viewChild,
   viewChildren,
 } from '@angular/core';
-import { CalculatorButtonComponent } from '../calculator-button/calculator-button.component';
-import { DICTIONARY_KEYS } from '@/calculator/utils';
-import { CalculatorService } from '@/calculator/services/calculator.service';
+import {CalculatorButtonComponent} from '../calculator-button/calculator-button.component';
+import {DICTIONARY_KEYS} from '@/calculator/utils';
+import {CalculatorService} from '@/calculator/services/calculator.service';
 
 @Component({
   selector: 'calculator',
@@ -31,7 +31,8 @@ export class CalculatorComponent {
   public lastOperator = computed(() => this.calculatorService.lastOperator());
 
   public handleClick(key: string) {
-    console.log({ key });
+    // console.log({ key });
+    this.calculatorService.constructNumber(key);
   }
 
   // @HostListener('document:keydown', ['$event'])

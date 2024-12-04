@@ -1,5 +1,14 @@
 {
-  "overrides": [{ "files": "*.html", "options": { "parser": "angular" } }],
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "angular"
+      }
+    }
+  ],
   "singleQuote": true,
-  "printWidth": 80
+  "printWidth": 80,
+  "bracketSpacing": false,
+  "bracketSameLine": true
 }
